@@ -8,7 +8,7 @@
 	$referer 	= null;
 	$params 	= array("botao" => "Consultar", "num_cnpj" => "31.804.115-0002-43");
 
-	$request	= $oMyTest->request($url, 'POST', $referer, $params);	
+	$request	= $oMyTest->request($url, $http_verb, $referer, $params);	
 	$json 		= $oMyTest->myParse($request);
 
 	echo $json;
